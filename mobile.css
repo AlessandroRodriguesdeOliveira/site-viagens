@@ -1,0 +1,407 @@
+@media screen and (max-width: 1400px){
+    @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+    
+    /*default*/
+    *{
+        border: 0px;
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        
+    }
+
+   
+    
+    /*body*/
+    body{
+        /*background-color: rgb(255, 60, 0);*/
+        background-color: rgba(238, 219, 208, 0.418);
+       
+    }
+
+    /*new body when click on button menu*/
+    body.new_body{
+       height: 100%;
+       display: flex;
+       justify-content: center;
+    }
+    /**********************************************************************/
+
+    /*header*/
+    header{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 18vh;
+        
+    }
+
+    /*image of header*/
+    #img_header{
+        width: 60px;
+        margin: 0px 0px 0px 0px;
+    }
+
+    /*form-header*/
+    #form_header{
+        display: flex;
+        justify-content: center;
+        padding: 5px;
+        background-color: rgb(255, 255, 255);
+        border-radius: 20px;
+        width: 50%;
+
+    }
+
+    /*button of searcher*/
+    #form_header button{
+        
+        background: none;
+        margin: 0px 5px 0px 8px;
+    }
+
+    #form_header button:hover{
+        cursor: pointer;
+    }
+
+    /*place of search*/
+    #form_header input{
+        padding-left: 6px;
+        font-size: 15px;
+        width: 100%;
+    }
+
+    #form_header input:focus{
+        outline: 0;
+
+    }
+    /*------------------------------------------------------------------------------*/
+    
+    /*the links manu hidded*/
+    header nav a{
+        padding: 10px;
+        text-decoration: none;
+        
+    }
+
+    /*desing of button menu*/
+    #btn_menu > span{
+        background-color: rgb(255, 70, 0);
+        width: 70%;
+        height: 4px;
+        display: block;
+        margin: 5px auto;
+    }
+
+    #btn_menu {
+        margin-right: 20px;
+        width: 45px;
+        height: 40px;
+        border: 2px solid rgb(88, 88, 88);
+        background: transparent;
+        border-radius: 5px;
+    }
+
+    #btn_menu:hover{
+        cursor: pointer;
+    }
+
+    /*nav of principal page*/
+    #nav_home{
+        height: 10vh;
+        background-color: #585757;
+        margin-top: 2px;
+    }
+
+    /******************************************************************/
+
+    /*menu hiddden/hamburguer*/ /*------------------------------------------------*/
+    #menu-hidden{
+        display: none;
+    }
+
+    .menu_show{
+        visibility: hidden;
+        position: absolute;
+   
+    }
+
+
+    .menu_show.show{
+        visibility: visible;
+        background-color: rgb(255, 255, 255);
+        width: 90%;
+        position: absolute;
+        top: 18.25vh; 
+        left: 5%;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+
+    /*links of harmburguer menu*/
+    .menu_show > nav a{
+        padding: 12px;
+        text-decoration: none;
+        text-align: left;
+        color: #585757;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 14pt;
+       
+
+    }
+
+
+    /*nav hamburguer menu*/
+    .menu_show > nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        width: 35%;
+        position: relative;
+        top: 5%;
+        left: 5%;
+        margin-bottom: 10px;
+        
+    }
+
+    /*social meidas img*/  /*---------------------------------------------------------*/
+    #social_medias{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: 20%;
+        width: 60px;
+        left: 5%;
+        height: 180px;
+        margin-bottom: 10px;
+        
+        
+    }
+
+    /*button of social medias*/
+    #social_medias > button{
+        width: 50px;
+        height: 50px;
+        margin: 5px;
+        align-items: center;
+        text-align: center;
+        background-color: rgb(255, 255, 255);
+        border-radius: 50px;
+        border: 2px solid rgba(128, 128, 128, 0.719);
+    }
+
+    #social_medias > button:hover{
+        cursor: pointer;
+
+  
+    }
+
+    #social_medias > button > svg{
+           margin-top: 3px;
+           
+    }
+    
+    /******************************************************************************************/
+    /*line page desing*/  /*--------------------------------------------------------------*/
+    hr{
+        background-image: linear-gradient(to right,blue,rgb(255, 51, 0),rgb(0, 0, 0));
+    }
+
+    /*************************************************************************************************/
+
+    /*main configuracion*/ /*-----------------------------------------------------------*/
+    .main{
+        padding-top: 50px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*horizontal nav*/   /*----------------------------------------------------------*/
+    .sec_main{
+        display: flex;
+        overflow-x: auto;
+        width: 100%;
+        padding: 10px; 
+    }
+
+    
+    
+    /*cards of horizontal nav*/
+    .art_main{
+        min-width: 35vh;
+        max-width: 40vh;
+        height: 58vh;
+        background-color: rgb(255, 255, 255);
+        border-radius: 20px;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 85% 15%;
+        justify-items: center;
+        justify-content: center;
+        margin: 15px;
+        box-shadow: 8px 8px 10px  #b6b0b088;
+    }
+
+    /*button of cards*/
+    .btn_art{
+        width: 80%;
+        height: 80%;
+        border-radius: 30px;
+        background: none;
+        border: 1px solid rgb(255, 94, 0) ;
+        color: rgb(255, 94, 0);
+        
+    }
+
+
+    .btn_art:hover{
+        background-color: rgb(255, 94, 0);
+        color: white;
+        cursor: pointer;
+    }
+
+
+    .art_main > article{
+        width: 100%;
+   
+    }
+
+    /*images of cards*/
+    .art_main > article > .img_menus{
+        width: 100%;
+        border-radius: 20px 20px 0px 0px;
+        max-height: 90%;
+        height: 40%;
+        
+    }
+
+    /*text description of cards*/
+    .art_main > article > p{
+        font-size: 18px;
+        font-style: oblique;
+        font-variant: small-caps;
+        width: 93%;
+        height: 24vh;
+        overflow-wrap: break-word;
+        margin-top: 5px;
+        margin-left: 10px; 
+        text-align: justify;
+    }
+
+    /*reviews/stars*/
+    .estrelas{
+        width: 100%;
+   
+    }
+
+    /*button of img stars*/
+    .btn-estrelas{
+        width: 30%;
+        background: none;
+        margin-left: 10px;
+    }
+
+    .btn-estrelas:hover{
+        cursor: pointer;
+    }
+
+    /*scrollbar of horizontal nav hidden*/
+    .sec_main::-webkit-scrollbar{
+        background: transparent;
+    }
+
+    /*section of extra description after nav main*/ /*-------------------------------------------------*/
+    #sec_descrip{
+        margin-top: 50px;
+        width: 100%;
+       
+    }
+
+    /*article of section after nav main*/
+    #art_des1{
+        width: 95%;
+        height: 80vh;
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 50px;
+        margin-bottom: 30px;
+
+       
+    }
+    
+    #art_des2{
+        width: 95%;
+        border-top-left-radius: 50px;
+        border-bottom-left-radius: 50px;
+        height: 80vh;
+        margin-bottom: 30px;
+        margin-left: 5.5%;
+        
+
+    }
+
+    #art_des3{
+        width: 95%;
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 50px;
+        height: 80vh;
+        
+    }
+
+    /*img of article */
+    #art_des1 img {
+        height: 100%;
+        width: 100%;
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 50px;
+        
+    }
+
+    #art_des2 img {
+        height: 100%;
+        width: 100%;
+        border-top-left-radius: 50px;
+        border-bottom-left-radius: 50px;
+        
+    }
+    
+    #art_des3 img {
+        height: 100%;
+        width: 100%;
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 50px;
+        
+    }
+
+
+    /*last section description*/ /*-------------------------------------------------------*/
+    #extra_info{
+        display: flex;
+        justify-items: center;
+    }
+
+
+    #extra_info > article{
+        background-color: blue;
+        margin-top: 20px;
+        height: 50vh;
+        width: 100%;
+        border-top-right-radius: 50px;
+        border-top-left-radius: 50px;
+        
+    }
+
+    /******************************************************************************************************************/
+    /*footer*/
+    footer{
+        background-color: rgb(59, 56, 56);
+        width: 100%;
+        height: 21vh;
+        color: rgb(255, 255, 255);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        
+    }
+}
