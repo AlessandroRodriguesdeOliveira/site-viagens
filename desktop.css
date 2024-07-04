@@ -1,4 +1,4 @@
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1024px) {
     @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
     
     /*default*/
@@ -215,7 +215,7 @@
         display: flex;
         overflow-x: auto;
         padding: 10px;
-        margin-left: 5%;
+        margin-left: 4.5%;
     }
 
     /*cards of horizontal nav*/
@@ -380,7 +380,7 @@
     footer{
         background-color: rgb(59, 56, 56);
         width: 100%;
-        height: 21vh;
+        height: 25vh;
         color: rgb(255, 255, 255);
         display: flex;
         justify-content: center;
